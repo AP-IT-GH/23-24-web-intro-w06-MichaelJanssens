@@ -68,7 +68,8 @@
           <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
           <p>Vul het registratieformulier in. <br>Velden met een * zijn verplicht.</p>
         </article>
-        <hr>
+<hr>
+        <h2 class="text-uppercase fs-6 fw-bolder pt-3">Gegevens</h2>
         <form class="row g-2">
           <div class="col-12 col-sm-6 col-md-6">
             <label for="voornaam" class="form-label">Voornaam <span>*</span></label>
@@ -81,13 +82,75 @@
 
           </div>
           <div class="col-6 col-sm-6 col-md-6">
-            <label for="validationCustom01" class="form-label">Mobiel</label>
-            <input type="text" class="form-control" id="validationCustom01" value="0579 54 78 98">
+            <label for="mobiel" class="form-label">Mobiel</label>
+            <input type="text" class="form-control" id="mobiel" value="0579 54 78 98">
           </div>
           <div class="col-6 col-sm-6 col-md-6">
             <label for="datum" class="form-label">Datum</label>
             <input type="date" class="form-control" id="datum" value="">
           </div>
+
+
+          <h2 class="text-uppercase fs-6 fw-bolder pt-3">Accountgegevens</h2>
+        <form class="row g-2">
+          <div class="col-12 col-sm-6 col-md-12">
+            <label for="email" class="form-label">email <span>*</span></label>
+            <input type="mail" class="form-control" id="email" value="" required>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6">
+            <label for="pasword" class="form-label">paswoord <span>*</span></label>
+            <input type="password" class="form-control" id="password" value="min 8 karakters, 1 cijfer, 1 hoofdletter">
+          </div>
+          <div class="col-6 col-sm-6 col-md-6">
+            <label for="paswordconfirm" class="form-label">bevestiging paswoord <span>*</span></label>
+            <input type="password" class="form-control" id="passwordconfirm" value="">
+          </div>
+
+          <h2 class="text-uppercase fs-6 fw-bolder pt-3">Adresgegevens</h2>
+          <form class="row g-12">
+            <div class="col-12 col-sm-6 col-md-12">
+              <label for="adres" class="form-label">adres <span>*</span></label>
+              <input type="text" class="form-control" id="adres" value="" required>
+            </div>
+            <div class="col-md-2">
+              <label for="postcode" class="form-label">postcode <span>*</span></label>
+              <input type="text" class="form-control" id="postcode">
+            </div>
+            <div class="col-md-6">
+              <label for="stad" class="form-label">stad <span>*</span></label>
+              <input type="text" class="form-control" id="stad">
+            </div>
+            <div class="col-md-4">
+              <label for="land" class="form-label">kies een land <span>*</span></label>
+              <select id="text" class="form-select">
+                <option selected>Belgie</option>
+                <option>...</option>
+              </select>
+            </div>
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3">Koffieachtergrond</h2>
+            <form class="row g-12">
+              <div class="col-md-6">
+                <label for="land" class="form-label">ik koop</label>
+                <select id="text" class="form-select">
+                  <option selected>koffiebonen</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="land" class="form-label">en ben fan van het merk</label>
+                <select id="text" class="form-select">
+                  <option selected>Illy</option>
+                  <option>...</option>
+                </select>
+              </div>
+                <div class="col-md-12">
+                <label for="tevreden" class="form-label">hoe tevreden ben je van ons?</label>
+                <input type="range" class="form-range" id="tevreden">
+              </div>
+              <div class="col-md-6">
+              <button type="submit" class="btn btn-primary">verzenden</button>
+            </div>
+          </form>
       </section>
       <hr>
     </main>
